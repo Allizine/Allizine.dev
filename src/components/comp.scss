@@ -1,0 +1,36 @@
+/*! `Bootstrap 5` Bootstrap 5 theme */
+@import url(https://fonts.googleapis.com/css?family=Roboto:200,300,400,700);
+$headings-font-family: Roboto;
+
+$primary: #65a2ff;
+$secondary: #6c757d;
+$success: #198754;
+$danger: #dc3545;
+$info: #0dcaf0;
+$warning: #ffc107;
+$light: #f8f9fa;
+$dark: #2c2c2c;
+$body-text-color: #ffffff;
+@import "bootstrap";
+
+// Add SASS theme customizations here..
+
+@media (max-width: 767px) {
+  .tech-icons {
+    margin: 10px !important;
+  }
+}
+
+.tech-icons:hover {
+  transform: scale(1.05) !important;
+  overflow: hidden !important;
+  border: 2.2px solid #65a2ff !important;
+}
+.tech-icon-images {
+  padding: 20px !important;
+  line-height: 1.6 !important;
+}
+
+p {
+  font-weight: bold;
+}
