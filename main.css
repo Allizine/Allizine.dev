@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+:root {
+    --mauve: #Faa6FF;
+    --pink-lav: #efc3f5
+    --royal-purple: #7353BA;
+    --russian-violet: #2f195F;
+    --rich-black: #0f1020;
+    --font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-color: #0f1020;
+}
+
+
+* {
+/* disable pesky noobs */
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-control {
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    width: 100%;
+    border-bottom-left-radius: 15px; 
+    border-bottom-right-radius: 15px;
+/* Visual Diff */
+    background-color: #2f195F;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+
+.nav-control ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-control a {
+    font-size: 17px;
+    padding: 10px 15px; 
+    color: white;
+}
+
+.nav-control a:link {
+    text-decoration: none;
+}
+
+.nav-control h1 {
+    padding-left: 8px;
+    size: 25px;
+    color: #fff;
+}
+
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 var(--hover); }
+  }
+  
