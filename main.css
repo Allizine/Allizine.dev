@@ -45,7 +45,6 @@ body {
     background: transparent;
     border: 2px solid #2f195F;
     font-family: 'Quicksand', sans-serif;
-
 }
 
 
@@ -64,15 +63,31 @@ body {
 
 .nav-control a:link {
     text-decoration: none;
+    opacity: 25%;
 }
 
 .nav-control h1 {
+    background-size: 200%;
+    background: linear-gradient(
+        to right,
+        var(--mauve),
+        white
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
     padding-left: 12px;
     size: 25px;
     color: #fff;
 }
 
 .nav-control a:hover {
-    color: var(--mauve);
-    font-size: 25px;
+    opacity: 1;
+    color: #Faa6FF;
+    -webkit-transition:opacity 1500ms ease-out;
+    -moz-transition:opacity 1500ms ease-out;
+    -o-transition:opacity 1500ms ease-out;
+    transition:opacity 1500ms ease-out;
 }
+
+
