@@ -30,19 +30,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: ;
 }
 
 .nav-control {
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(15px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 48px;
     width: 100%;
-    border-bottom-left-radius: 15px; 
-    border-bottom-right-radius: 15px;
+    border-radius: 20px;
 /* Visual Diff */
-    background-color: #2f195F;
+    background: transparent;
+    border: 2px solid #2f195F;
     font-family: 'Quicksand', sans-serif;
 
 }
@@ -66,13 +67,12 @@ body {
 }
 
 .nav-control h1 {
-    padding-left: 8px;
+    padding-left: 12px;
     size: 25px;
     color: #fff;
 }
 
-
-@keyframes pulse {
-    0% { box-shadow: 0 0 0 0 var(--hover); }
-  }
-  
+.nav-control a:hover {
+    color: var(--mauve);
+    font-size: 25px;
+}
