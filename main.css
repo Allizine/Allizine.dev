@@ -24,27 +24,29 @@ body {
     border: 0;
     outline: none;
     box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .container {
     display: flex;
+    flex-direction: column;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
+    color: #fff;
 }
 
 .nav-control {
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(15px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 48px;
     width: 100%;
-    border-bottom-left-radius: 15px; 
-    border-bottom-right-radius: 15px;
+    border-radius: 20px;
 /* Visual Diff */
-    background-color: #2f195F;
-    font-family: 'Quicksand', sans-serif;
-
+    background: transparent;
+    border: 2px solid #2f195F;
 }
 
 
@@ -63,16 +65,40 @@ body {
 
 .nav-control a:link {
     text-decoration: none;
+    opacity: 25%;
 }
 
 .nav-control h1 {
-    padding-left: 8px;
+    padding-left: 12px;
     size: 25px;
     color: #fff;
 }
 
+.nav-control a:hover {
+    opacity: 1;
+    color: #Faa6FF;
+    -webkit-transition:opacity 1500ms ease-out;
+    -moz-transition:opacity 1500ms ease-out;
+    -o-transition:opacity 1500ms ease-out;
+    transition:opacity 1500ms ease-out;
+}
 
-@keyframes pulse {
-    0% { box-shadow: 0 0 0 0 var(--hover); }
-  }
-  
+
+.main-content {
+    padding-top: 8px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 15px;
+}
+
+
+.main-content .job-title {
+    color: #Faa6FF;
+    font-weight: 900;
+}
+
+
+.main-content ul {
+    text-decoration: none;
+}
