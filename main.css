@@ -24,6 +24,7 @@ body {
     border: 0;
     outline: none;
     box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .container {
@@ -46,7 +47,6 @@ body {
 /* Visual Diff */
     background: transparent;
     border: 2px solid #2f195F;
-    font-family: 'Quicksand', sans-serif;
 }
 
 
@@ -86,14 +86,19 @@ body {
 
 .main-content {
     padding-top: 8px;
-    border: #Faa6FF 2px dotted;
-    border-radius: 15px;
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
     position: relative;
     padding-top: 15px;
-
-    text-decoration:none;
 }
 
+
+.main-content .job-title {
+    color: #Faa6FF;
+    font-weight: 900;
+}
+
+
+.main-content ul {
+    text-decoration: none;
+}
